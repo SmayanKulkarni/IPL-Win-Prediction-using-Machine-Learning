@@ -1,6 +1,5 @@
 absl-py==2.1.0
 altair==5.4.1
-anyio @ file:///croot/anyio_1706220167567/work
 argon2-cffi @ file:///opt/conda/conda-bld/argon2-cffi_1645000214183/work
 argon2-cffi-bindings @ file:///work/perseverance-python-buildout/croot/argon2-cffi-bindings_1698877183685/work
 asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
@@ -16,7 +15,7 @@ Brotli @ file:///croot/brotli-split_1714483155106/work
 cachetools==5.5.0
 certifi @ file:///croot/certifi_1725551672989/work/certifi
 cffi @ file:///croot/cffi_1714483155441/work
-charset-normalizer @ file:///croot/charset-normalizer_1721748349566/work
+charset-normalizer @ file:///croot/charset-normalizer_1721748349566/work2
 click @ file:///work/perseverance-python-buildout/croot/click_1698845879718/work
 comm @ file:///croot/comm_1709322850197/work
 contourpy @ file:///work/perseverance-python-buildout/croot/contourpy_1701756524386/work
