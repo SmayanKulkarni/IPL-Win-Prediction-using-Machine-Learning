@@ -99,10 +99,10 @@ if st.button('Predict Probability'):
         # Display "Match Over" and the winner
         if win_prob_batting > win_prob_bowling:
             st.header("Match Over")
-            st.subheader(f"{batting_team} wins with a probability of {round(win_prob_batting * 100)}%")
+            st.subheader(f"{batting_team} wins!!")
         else:
             st.header("Match Over")
-            st.subheader(f"{bowling_team} wins with a probability of {round(win_prob_bowling * 100)}%")
+            st.subheader(f"{bowling_team} wins!!")
     else:
         # If the match is still ongoing
         runs_left = target - score
