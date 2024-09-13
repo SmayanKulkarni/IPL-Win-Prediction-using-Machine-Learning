@@ -1,31 +1,11 @@
 absl-py==2.1.0
 altair==5.4.1
 astunparse==1.6.3
-attrs @ file:///work/perseverance-python-buildout/croot/attrs_1698845858439/work
-Babel @ file:///work/perseverance-python-buildout/croot/babel_1698863996602/work
 beautifulsoup4 @ file:///croot/beautifulsoup4-split_1718029820055/work
-bleach @ file:///opt/conda/conda-bld/bleach_1641577558959/work
 blinker==1.8.2
-Bottleneck @ file:///croot/bottleneck_1709069899917/work
-Brotli @ file:///croot/brotli-split_1714483155106/work
 cachetools==5.5.0
-certifi @ file:///croot/certifi_1725551672989/work/certifi
-cffi @ file:///croot/cffi_1714483155441/work
-charset-normalizer @ file:///croot/charset-normalizer_1721748349566/work2
-click @ file:///work/perseverance-python-buildout/croot/click_1698845879718/work
-comm @ file:///croot/comm_1709322850197/work
-contourpy @ file:///work/perseverance-python-buildout/croot/contourpy_1701756524386/work
-cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
-debugpy @ file:///work/perseverance-python-buildout/croot/debugpy_1698884710808/work
-decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
-defusedxml @ file:///tmp/build/80754af9/defusedxml_1615228127516/work
-executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
-fastjsonschema @ file:///work/perseverance-python-buildout/croot/python-fastjsonschema_1698846742882/work
 flatbuffers==24.3.25
-fonttools @ file:///croot/fonttools_1713551344105/work
 gast==0.6.0
-gitdb @ file:///tmp/build/80754af9/gitdb_1617117951232/work
-GitPython @ file:///croot/gitpython_1720455034730/work
 google-pasta==0.2.0
 grpcio==1.66.1
 h5py==3.11.0
@@ -48,7 +28,6 @@ jupyterlab @ file:///work/perseverance-python-buildout/croot/jupyterlab_17090605
 jupyterlab-pygments @ file:///tmp/build/80754af9/jupyterlab_pygments_1601490720602/work
 jupyterlab_server @ file:///work/perseverance-python-buildout/croot/jupyterlab_server_1707343148056/work
 keras==3.5.0
-kiwisolver @ file:///work/perseverance-python-buildout/croot/kiwisolver_1698847502605/work
 libclang==18.1.1
 Markdown==3.7
 markdown-it-py==3.0.0
