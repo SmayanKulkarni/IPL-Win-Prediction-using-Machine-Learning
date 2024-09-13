@@ -52,7 +52,11 @@ with col5:
     wickets_out = st.number_input('Wickets out', min_value=0, max_value=10)
 
 if st.button('Predict Probability'):
-    if wickets_out == 10:
+    if score > target:
+        # If score is more than the target, batting team wins
+        st.header("Match Over")
+        st.subheader(f"{batting_team} wins!!")
+    elif wickets_out == 10:
         # Display "Match Over" and winner based on win probabilities
         runs_left = target - score
         balls_left = 120 - (overs * 6)
@@ -95,11 +99,12 @@ if st.button('Predict Probability'):
         # Display "Match Over" and the winner
         if win_prob_batting > win_prob_bowling:
             st.header("Match Over")
-            st.subheader(f"{batting_team} wins!! ")
+            st.subheader(f"{batting_team} wins with a probability of {round(win_prob_batting * 100)}%")
         else:
             st.header("Match Over")
-            st.subheader(f"{bowling_team} wins!!")
+            st.subheader(f"{bowling_team} wins with a probability of {round(win_prob_bowling * 100)}%")
     else:
+        # If the match is still ongoing
         runs_left = target - score
         balls_left = 120 - (overs * 6)
         wickets_left = 10 - wickets_out
