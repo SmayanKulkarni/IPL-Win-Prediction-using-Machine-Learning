@@ -1,6 +1,5 @@
 absl-py==2.1.0
 altair==5.4.1
-asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
 astunparse==1.6.3
 async-lru @ file:///work/perseverance-python-buildout/croot/async-lru_1701732681408/work
 attrs @ file:///work/perseverance-python-buildout/croot/attrs_1698845858439/work
