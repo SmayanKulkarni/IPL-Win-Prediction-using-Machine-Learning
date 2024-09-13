@@ -32,3 +32,4 @@ watchdog==4.0.2
 Werkzeug==3.0.4
 wheel==0.43.0
 wrapt==1.16.0
+scikit-learn==1.5.1
