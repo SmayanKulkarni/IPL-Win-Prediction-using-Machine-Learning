@@ -2,10 +2,8 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-# Load the pre-trained model
 pipe = pickle.load(open('pipe.pkl', 'rb'))
 
-# IPL teams and cities
 teams = ['Sunrisers Hyderabad', 'Mumbai Indians', 'Royal Challengers Bangalore',
          'Kolkata Knight Riders', 'Kings XI Punjab', 'Chennai Super Kings',
          'Rajasthan Royals', 'Delhi Capitals']
@@ -58,11 +56,9 @@ if st.button('Predict Probability'):
     rrr = (runs_left * 6) / balls_left if balls_left > 0 else 0
 
     if score > target:
-        # If score is more than the target, batting team wins
         st.header("Match Over")
         st.subheader(f"{batting_team} wins!!")
     elif wickets_out == 10:
-        # If wickets are all out, check if the score is less than the target
         if score < target:
             st.header("Match Over")
             st.subheader(f"{bowling_team} wins!!")
@@ -91,15 +87,13 @@ if st.button('Predict Probability'):
                 'crr': [crr],
                 'rrr': [rrr]
             })
-
-            # Predicting win probabilities for both teams
+            
             result_batting = pipe.predict_proba(input_df_batting)
             result_bowling = pipe.predict_proba(input_df_bowling)
             
             win_prob_batting = result_batting[0][1]
             win_prob_bowling = result_bowling[0][1]
 
-            # Display "Match Over" and the winner
             if win_prob_batting > win_prob_bowling:
                 st.header("Match Over")
                 st.subheader(f"{batting_team} wins with a probability of {round(win_prob_batting * 100)}%")
@@ -107,7 +101,6 @@ if st.button('Predict Probability'):
                 st.header("Match Over")
                 st.subheader(f"{bowling_team} wins with a probability of {round(win_prob_bowling * 100)}%")
     else:
-        # If the match is still ongoing
         input_df = pd.DataFrame({
             'batting_team': [batting_team],
             'bowling_team': [bowling_team],
@@ -120,12 +113,10 @@ if st.button('Predict Probability'):
             'rrr': [rrr]
         })
 
-        # Predicting win probability
         result = pipe.predict_proba(input_df)
         loss_prob = result[0][0]
         win_prob = result[0][1]
 
-        # Displaying results
         st.write(f"Runs needed: {runs_left}")
         st.write(f"Current Run Rate (CRR): {crr:.2f}")
         st.write(f"Required Run Rate (RRR): {rrr:.2f}")
